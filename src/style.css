@@ -4,8 +4,9 @@ font-family: "Poppins", sans-serif;
 */
 
 :root {
-  --branding-color: rgba(164, 99, 248, 1);
-  --secondary-color: rgba(251, 220, 255);
+  --branding-color: rgb(164, 99, 248);
+  --secondary-color: rgb(251, 220, 255);
+  --tertiary-color: #fcefff;
   --font-family-heading: "Playfair Display", serif;
   --font-other-text: "Poppins", sans-serif;
 }
@@ -15,16 +16,26 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 36px;
+  font-family: var(--font-family-heading);
+}
+
 p,
 h5,
 a {
   font-family: var(--font-other-text);
 }
 
+p {
+  font-size: 15px;
+  line-height: 30px;
+}
+
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 160px 12px;
 }
 
 .hero p {
@@ -34,7 +45,7 @@ a {
 }
 
 .hero h1 {
-  font-size: 75px;
+  font-size: 72px;
 }
 
 .hero h5 {
@@ -51,4 +62,44 @@ a {
   border-radius: 10px;
   font-size: 18px;
   padding: 15px 30px;
+}
+
+.hero-projects {
+  background: var(--tertiary-color);
+  padding: 20px;
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 12px 20px;
+}
+
+.project-description {
+  padding: 60px 0;
+}
+
+.picture-projects img {
+  width: 460px;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font: 44px;
+  }
+
+  .hero {
+    padding: 80px 6px;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
