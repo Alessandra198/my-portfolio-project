@@ -83,6 +83,7 @@ p {
 
 .picture-projects img {
   width: 460px;
+  border-radius: 15px;
 }
 
 @media (max-width: 992px) {
