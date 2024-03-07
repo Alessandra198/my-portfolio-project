@@ -28,6 +28,12 @@ a {
   font-family: var(--font-other-text);
 }
 
+h6 {
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  margin: 3px 0 0 0;
+}
+
 p {
   font-size: 15px;
   line-height: 30px;
@@ -103,6 +109,10 @@ p {
     padding: 0;
     text-align: center;
   }
+
+  nav li {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -144,4 +154,30 @@ p {
 
 body {
   background: var(--tertiary-color);
+}
+
+nav {
+  padding: 10px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3a0979;
+  transition: all 150ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
 }
