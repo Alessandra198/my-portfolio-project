@@ -44,10 +44,6 @@ p {
   margin: 0;
 }
 
-.hero h1 {
-  font-size: 72px;
-}
-
 .hero h5 {
   font-size: 18px;
   font-weight: normal;
@@ -86,6 +82,10 @@ p {
   border-radius: 15px;
 }
 
+.about-container img {
+  border-radius: 15px;
+}
+
 @media (max-width: 992px) {
   h1 {
     font-size: 60px;
@@ -103,4 +103,45 @@ p {
     padding: 0;
     text-align: center;
   }
+
+  .about-section h1 {
+  }
+}
+
+@media (min-width: 992px) {
+  .hero h1 {
+    font-size: 72px;
+  }
+
+  .about-section h1 {
+    font-size: 65px;
+  }
+
+  .about-section h2 {
+    font-size: 30px;
+  }
+
+  .about-section {
+    margin: 10px 0;
+  }
+
+  .about-container img {
+    max-width: 500px;
+  }
+}
+
+.about-container {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.about-container p {
+  font-size: 18px;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.about-body-container {
+  background: var(--tertiary-color);
 }
