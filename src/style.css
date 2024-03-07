@@ -210,7 +210,8 @@ footer .contact-box p {
 }
 
 .email-link a,
-.social-links a {
+.social-links a,
+.signature-link {
   text-decoration: none;
   color: #3a0979;
   transition: all 150ms ease-in-out;
@@ -224,11 +225,21 @@ footer .social-links a {
   border-radius: 50%;
 }
 
-.email-link a:hover {
+.email-link a:hover,
+.signature-link:hover {
   color: var(--branding-color);
 }
 
 .social-links a:hover {
   color: white;
   background: var(--branding-color);
+}
+
+.signature {
+  color: #3a0979;
+  font-weight: 400;
+}
+
+.contact-signature {
+  margin-top: 100px;
 }
