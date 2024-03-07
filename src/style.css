@@ -65,6 +65,13 @@ p {
   border-radius: 10px;
   font-size: 18px;
   padding: 15px 30px;
+  transition: all 150ms ease-in-out;
+}
+
+.btn-branding:hover {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  background: var(--tertiary-color);
 }
 
 .hero-projects {
@@ -77,6 +84,12 @@ p {
   border-radius: 10px;
   font-size: 14px;
   padding: 12px 20px;
+  transition: all 150ms ease-in-out;
+}
+
+.btn-branding-outline:hover {
+  color: white;
+  background: var(--branding-color);
 }
 
 .project-description {
@@ -180,4 +193,42 @@ nav a {
 nav a:hover,
 nav li.active a {
   color: var(--branding-color);
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 100px;
+  border-radius: 15px;
+}
+
+footer .contact-box h2 {
+  font-size: 48px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+.email-link a,
+.social-links a {
+  text-decoration: none;
+  color: #3a0979;
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  background-color: var(--secondary-color);
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.email-link a:hover {
+  color: var(--branding-color);
+}
+
+.social-links a:hover {
+  color: white;
+  background: var(--branding-color);
 }
